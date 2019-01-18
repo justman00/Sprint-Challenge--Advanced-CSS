@@ -1,1 +1,16 @@
 // Mixins Here
+.flex-it (@just: center, @align: center) {
+  display: flex;
+  justify-content: @just;
+  align-items: @align;
+}
+
+.custom-btn (@bg-color, @font-col) {
+  color: @font-col;
+  background-color: @bg-color;
+  font-size: 2rem;
+  padding: 10px;
+  width: 30%;
+  border-radius: 5px;
+  text-align: center;
+}

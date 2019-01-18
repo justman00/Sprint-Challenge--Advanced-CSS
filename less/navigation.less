@@ -1,1 +1,32 @@
 // Navigation code here
+header.navigation {
+  width: 100%;
+  .flex-it();
+  padding: 15px 0;
+  flex-direction: column;
+  background: @nav-bg;
+  border-bottom: 1px solid @sea-shell;
+  @media @mobile {
+    padding: 10px 0;
+  }
+  h1 {
+    font-size: 4rem;
+    @media @mobile {
+      margin-bottom: 10px;
+    }
+  }
+  nav {
+    .flex-it(space-around);
+    font-size: 1.6rem;
+    width: 39%;
+    margin-top: 2%;
+    a {
+      color: @nav-font;
+      text-decoration: none;
+    }
+
+    @media @mobile {
+      width: 85%;
+    }
+  }
+}
